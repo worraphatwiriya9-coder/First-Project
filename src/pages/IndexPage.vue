@@ -4,7 +4,7 @@
     <q-input
       filled
       v-model="name"
-      label="Your name *"
+      label="Your name (ชื่อ)*"
       hint="Name and surname"
       lazy-rules
       :rules="[val => (val && val.length > 0) || 'Please type something']"
@@ -14,7 +14,7 @@
       filled
       type="number"
       v-model.number="age"
-      label="Your age *"
+      label="Your age  (อายุ)*"
       lazy-rules
       :rules="[
         val => (val !== null && val !== '') || 'Please type your age',
